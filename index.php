@@ -34,42 +34,55 @@
     </Tr>
     <Tr>
     	<td><input type="submit"  name="subadd" value="Add"/></td>
-    	<td><input type="submit"  value="Print"/></td>
+    	<td><input type="submit" name="Print"   value="Print"/></td>
     </Tr>
 </table>
 </form>
 <?php 
-
-
-// Create connection
-	$con=mysqli_connect("localhost","root","","product");
-
-// Check connection
-if (mysqli_connect_errno($con))
-{
-	echo "Failed to connect to MySQL: " . mysqli_connect_error();
-} else { echo "Connection was OK!\n";}
-
-$names=$_GET["name"];
-$selects=$_GET["select"];
-$prices=$_GET["price"];
-$descs=$_GET["desc"];
-
-if (isset($_GET['subadd'])){
-echo $names;
-echo $selects;
-echo $prices;
-echo $descts;
-
-
-mysqli_query($con,"INSERT INTO table-product($name, $cdordvd, $price, $descrip)
-VALUES ('$names','$selects','$prices','$descs')");
-
-
-
-}
-
-mysqli_close($con);
+include("php.php");
+//// Create connection
+//$con=mysqli_connect("localhost","root","","product");
+//// Check connection
+//if (mysqli_connect_errno($con))
+//{
+//	echo "Failed to connect to MySQL: " . mysqli_connect_error();
+//} 
+//$names=$_GET["name"];
+//$selects=$_GET["select"];
+//$prices=$_GET["price"];
+//$descs=$_GET["desc"];
+//if (isset($_GET['subadd']))
+//{
+//	$result =mysqli_query($con,"SELECT $names FROM pro WHERE name=$names");
+//	$row = mysqli_fetch_array($result);
+//	if (!$row)
+//	{
+//		mysqli_query($con,"INSERT INTO  pro(name,cdordvd,price,descrip)VALUES ('$names','$selects','$prices','$descs')");
+//	}
+//}
+//if (isset($_GET['Print']))
+//{
+//	$result =mysqli_query($con,"SELECT * FROM pro WHERE name=$names");
+//	echo "<table border='1' align='center' width='600px' bgcolor='#99CC00' dir='rtl' bordercolordark='#FF3300' style='text-align:center'>
+//		<tr>
+//			<td>Product Name</td> 
+//			<td>CD or DVD</td> 
+//			<td>Price</td> 
+//			<td>Description</td> 
+//		</tr>";
+//echo    "<tr>";
+//while($row = mysqli_fetch_array($result))
+//{
+//	echo"<td>".$row['name']."</td>"; 
+//	echo"<td>".$row['cdordvd']."</td>"; 
+//	echo"<td>".$row['price']."</td>"; 
+//	echo"<td>".$row['descrip']."</td>"; 	
+//}
+//echo   "</tr>";
+//echo "</table>";
+//}
+//mysqli_close($con);
 ?>
+
 </body>
 </html>
