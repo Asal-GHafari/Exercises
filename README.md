@@ -1,7 +1,9 @@
-Product
+##Product
 =========
 
-## TEAM (1Devs Web Department)
+##Project Manager
+* Farzaneh GHafari
+
 =========
 
 ## TECHNOLOGY
@@ -13,6 +15,7 @@ Product
 =========
 #### Step1 [Sunday, June 30, 2013]
 * Amature codes
+
 =========
-#### Step1 [Monday, July 1, 2013]
+#### Step2 [Monday, July 1, 2013]
 * Change code php for better codding.
