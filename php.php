@@ -21,8 +21,7 @@ if (isset($_GET['subadd']))
 }
 if (isset($_GET['Print']))
 {
-	$result =mysqli_query($con,"SELECT * FROM pro WHERE name=$names");
-	echo "<table border='1' align='center' width='600px' bgcolor='#99CC00' dir='rtl' bordercolordark='#FF3300' style='text-align:center'>
+	$result =mysqli_query($con,"SELECT * FROM pro WHERE name=$names");	echo "<table style='color:#FFF' border='1' align='center' width='600px' bgcolor='#0000FF' dir='rtl' bordercolordark='#FF3300'  style='margin-top:50px';>
 		<tr>
 			<td>Product Name</td> 
 			<td>CD or DVD</td> 

@@ -9,7 +9,7 @@
 <body>
 
 <form action="index.php" method="get" class="frm">
-<table border="1">
+<table border="0">
 	<Tr>
     	<td><label for="text">Product Name:</label></td>
     	<td><input type="text" name="name" /></td>
@@ -41,6 +41,5 @@
 <?php 
 include("php.php");
 ?>
-
 </body>
 </html>
